@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skilliest.ai - Intelligent AI Automation</title>
+    <title>Skilliest.ai - AI Automation & E-commerce Excellence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
             position: relative;
         }
         .hero-glow {
-            box-shadow: 0 0 150px 50px rgba(251, 70, 33, 0.4); /* Orange Glow */
+            box-shadow: 0 0 150px 50px rgba(251, 70, 33, 0.4);
         }
         .text-glow {
             text-shadow: 0 0 8px rgba(251, 70, 33, 0.6);
@@ -67,9 +67,39 @@
                 transform: translate(100px, 50px) scale(1.2);
             }
         }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+        }
+        .founder-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #FB4621;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(251, 70, 33, 0.5);
+        }
     </style>
     <script>
-        // Custom Tailwind CSS extension
         tailwind.config = {
             theme: {
                 extend: {
@@ -78,8 +108,8 @@
                         'brand-card': '#1A1A1A',
                         'brand-gray': '#CCCCCC',
                         brand: {
-                            'primary': '#FB4621', // Primary Orange
-                            'secondary': '#FC785D', // Lighter accent orange
+                            'primary': '#FB4621',
+                            'secondary': '#FC785D',
                         }
                     }
                 }
@@ -94,6 +124,13 @@
         <div class="nebula-glow nebula-2"></div>
     </div>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923144465003" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.956-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
+
     <!-- Header & Navigation -->
     <header id="header" class="bg-brand-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-800/50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -104,10 +141,11 @@
                 </span>
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#services" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">Services</a>
-                <a href="#how-it-works" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">How It Works</a>
-                <a href="#use-cases" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">Use Cases</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUTuQ8-V_H1-u-o97yyG7idHduMpm6dLuOVKmmFSeHn_Huiw/viewform" target="_blank" class="bg-brand-primary hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.6)]">Contact Us</a>
+                <a href="#ai-automation" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">AI Automation</a>
+                <a href="#ecommerce" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">E-commerce</a>
+                <a href="#business-services" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">Business Services</a>
+                <a href="#founder" class="text-brand-gray hover:text-brand-secondary transition-colors duration-300">Founder</a>
+                <a href="#contact" class="bg-brand-primary hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.6)]">Contact Us</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,10 +155,11 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
-            <a href="#services" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">Services</a>
-            <a href="#how-it-works" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">How It Works</a>
-            <a href="#use-cases" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">Use Cases</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUTuQ8-V_H1-u-o97yyG7idHduMpm6dLuOVKmmFSeHn_Huiw/viewform" target="_blank" class="block mt-2 bg-brand-primary hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 text-center">Contact Us</a>
+            <a href="#ai-automation" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">AI Automation</a>
+            <a href="#ecommerce" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">E-commerce</a>
+            <a href="#business-services" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">Business Services</a>
+            <a href="#founder" class="block text-brand-gray hover:text-brand-secondary transition-colors duration-300">Founder</a>
+            <a href="#contact" class="block mt-2 bg-brand-primary hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 text-center">Contact Us</a>
         </div>
     </header>
 
@@ -130,10 +169,9 @@
             <div class="absolute inset-0 -z-10 hero-glow opacity-30"></div>
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
-                    <!-- Left Column: Text Content -->
                     <div class="md:w-3/5 text-center md:text-left">
                         <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-                            Automate the Ordinary. <br> Achieve the <span class="text-brand-primary">Extraordinary</span>.
+                            Automate Your Business. <br> Scale Your <span class="text-brand-primary">E-commerce Empire</span>.
                         </h1>
                         <div class="flex justify-center md:justify-start mb-8">
                             <div class="bg-white inline-block rounded-lg px-4 py-2 shadow-lg transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.6)]">
@@ -143,13 +181,12 @@
                             </div>
                         </div>
                         <p class="max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-brand-gray mb-10">
-                            We build custom AI solutions to eliminate <span class="text-brand-primary font-semibold">repetitive tasks</span>, cut <span class="text-brand-primary font-semibold">operational costs</span>, and unlock true <span class="text-brand-primary font-semibold">scalability</span> for your business. Stop doing the mundane—let us automate it.
+                            From <span class="text-brand-primary font-semibold">AI automation</span> to <span class="text-brand-primary font-semibold">e-commerce partnerships</span> and complete <span class="text-brand-primary font-semibold">business registration services</span>—we're your one-stop solution for digital business success.
                         </p>
                         <a href="#contact" class="bg-brand-primary hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-[0_0_20px_rgba(251,70,33,0.7)]">
-                            Get Your Free Consultation
+                            Start Your Journey Today
                         </a>
                     </div>
-                    <!-- Right Column: Image -->
                     <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
                         <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1756000918/Ai_agent_1_k3xzdx.jpg" alt="AI Automation Workflow" class="rounded-lg border-2 border-brand-primary/50 w-full max-w-lg">
                     </div>
@@ -157,115 +194,294 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-brand-dark/50">
+        <!-- AI Automation Section -->
+        <section id="ai-automation" class="py-20 bg-brand-dark/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">End-to-End <span class="text-brand-primary">AI Automation</span> Services</h2>
-                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">We architect intelligent systems tailored to your exact needs. No templates, only <span class="text-brand-secondary">custom solutions</span>.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Intelligent <span class="text-brand-primary">AI Automation</span></h2>
+                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">Transform your operations with cutting-edge AI solutions that eliminate repetitive tasks and maximize efficiency.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
                     <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
                         <div class="text-brand-secondary mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Custom AI Solution Development</h3>
-                        <p class="text-brand-gray">We build bespoke AI models and software to automate complex tasks that off-the-shelf software can't handle.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Custom AI Solutions</h3>
+                        <p class="text-brand-gray">Bespoke AI models tailored to your unique business challenges. From chatbots to predictive analytics, we build what you need.</p>
                     </div>
-                    <!-- Service Card 2 -->
                     <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
-                         <div class="text-brand-secondary mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.44-.314.99-.225 1.32.175l.782.782c.345.345.434.88.175 1.32l-.527.737c-.25.35-.272.806-.108 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.11v1.093c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.108 1.204l.527.738c.314.44.225.99-.175 1.32l-.782.782c-.345.345-.88.434-1.32.175l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.165-.71.505-.78.93l-.15.893c-.09.543-.56.94-1.11.94h-1.093c-.55 0-1.02-.397-1.11-.94l-.149-.893c-.07-.425-.383-.765-.78-.93-.398-.165-.854-.143-1.204.108l-.738.527c-.44.314-.99.225-1.32-.175l-.782-.782c-.345-.345-.434-.88-.175-1.32l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.11v-1.093c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.165-.398.143-.854-.108-1.204l-.527-.738c-.314-.44-.225-.99.175-1.32l.782-.782c.345-.345.88-.434 1.32.175l.738.527c.35.25.806.272 1.204.108.397-.165.71-.505.78-.93l.15-.893z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Complete Workflow Automation</h3>
-                        <p class="text-brand-gray">We analyze and rebuild entire operational flows—from lead capture to customer support—to run in a fully autonomous mode.</p>
+                        <p class="text-brand-gray">End-to-end process automation from lead generation to customer support. Let AI handle the mundane while you focus on growth.</p>
                     </div>
-                    <!-- Service Card 3 -->
                     <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
-                         <div class="text-brand-secondary mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9" /></svg>
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">End-to-End Managed Service</h3>
-                        <p class="text-brand-gray">We handle everything: strategy, development, deployment, and long-term maintenance for a truly stress-free experience.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">AI-Powered Customer Support</h3>
+                        <p class="text-brand-gray">Intelligent chatbots and automated response systems that provide 24/7 support, reducing response time and increasing satisfaction.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Data Analytics & Insights</h3>
+                        <p class="text-brand-gray">Automated data collection, analysis, and reporting. Turn raw data into actionable insights that drive strategic decisions.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Marketing Automation</h3>
+                        <p class="text-brand-gray">AI-driven email campaigns, social media management, and lead nurturing that convert prospects into loyal customers.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Integration & Deployment</h3>
+                        <p class="text-brand-gray">Seamless integration with your existing systems. We handle deployment, training, and ongoing maintenance for hassle-free operation.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="py-20 bg-brand-dark/50">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Simple, <span class="text-brand-primary">Transparent Process</span></h2>
-                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">From idea to implementation, we make automation easy.</p>
-                </div>
-                <div class="relative">
-                    <!-- The connecting line -->
-                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-800 -translate-y-1/2"></div>
-                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-brand-primary -translate-y-1/2" style="width: 0%;" id="progress-line"></div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-                        <!-- Step 1 -->
-                        <div class="text-center">
-                            <div class="relative mb-4 inline-block">
-                                <div class="w-16 h-16 bg-brand-card border-2 border-brand-primary rounded-full flex items-center justify-center text-2xl font-bold text-brand-secondary">1</div>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Discovery & Consultation</h3>
-                            <p class="text-brand-gray">We start with a deep dive into your goals, pain points, and existing processes to understand your unique needs.</p>
-                        </div>
-                        <!-- Step 2 -->
-                        <div class="text-center">
-                            <div class="relative mb-4 inline-block">
-                                <div class="w-16 h-16 bg-brand-card border-2 border-gray-800 rounded-full flex items-center justify-center text-2xl font-bold text-white">2</div>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Strategy & Proposal</h3>
-                            <p class="text-brand-gray">We architect a custom solution and provide a clear proposal with scope, timeline, and a fixed budget.</p>
-                        </div>
-                        <!-- Step 3 -->
-                        <div class="text-center">
-                            <div class="relative mb-4 inline-block">
-                                <div class="w-16 h-16 bg-brand-card border-2 border-gray-800 rounded-full flex items-center justify-center text-2xl font-bold text-white">3</div>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Development & Deployment</h3>
-                            <p class="text-brand-gray">Our team builds and integrates your AI system, ensuring a seamless transition into your live environment.</p>
-                        </div>
-                        <!-- Step 4 -->
-                        <div class="text-center">
-                            <div class="relative mb-4 inline-block">
-                                <div class="w-16 h-16 bg-brand-card border-2 border-gray-800 rounded-full flex items-center justify-center text-2xl font-bold text-white">4</div>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Support & Maintenance</h3>
-                            <p class="text-brand-gray">We continuously monitor, update, and optimize your system, guaranteeing long-term, stress-free operation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Use Cases Section -->
-        <section id="use-cases" class="py-20 bg-brand-dark/50">
+        <!-- E-commerce Partnerships Section -->
+        <section id="ecommerce" class="py-20 bg-brand-dark/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Automate <span class="text-brand-primary">Any Industry, Any Task</span></h2>
-                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">Our solutions are industry-agnostic, built to solve universal business challenges.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">E-commerce <span class="text-brand-primary">Partnership Model</span></h2>
+                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">We invest in your success. Pay only from the profits we generate for you—no upfront costs, just results.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-brand-card p-6 rounded-lg text-center transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)] border border-brand-primary">
-                        <h4 class="font-semibold text-white">E-commerce</h4>
-                        <p class="text-sm text-brand-gray">Automated inventory, customer support, and order processing.</p>
+
+                <!-- Value Proposition -->
+                <div class="bg-gradient-to-r from-brand-primary to-brand-secondary p-8 rounded-2xl mb-12 text-center">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">🚀 Our Core Value Proposition</h3>
+                    <p class="text-white text-lg md:text-xl max-w-3xl mx-auto">
+                        We only charge you from the <span class="font-bold underline">share of profits we generate</span> for your business. 
+                        Your success is our success. Zero risk, maximum reward.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Private Label Management -->
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-brand-secondary mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-white">Private Label Management</h3>
+                        </div>
+                        <p class="text-brand-gray mb-4">Launch and scale your own branded products with our end-to-end private label services.</p>
+                        <ul class="space-y-2 text-brand-gray">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Product sourcing and supplier negotiation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Brand design and packaging</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Quality control and logistics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Listing optimization and marketing</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="bg-brand-card p-6 rounded-lg text-center transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)] border border-brand-primary">
-                        <h4 class="font-semibold text-white">Sales & Marketing</h4>
-                        <p class="text-sm text-brand-gray">AI-powered lead generation, email campaigns, and social media management.</p>
+
+                    <!-- Wholesale Management -->
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-brand-secondary mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-white">Wholesale Management</h3>
+                        </div>
+                        <p class="text-brand-gray mb-4">Scale your business with strategic wholesale partnerships and bulk selling opportunities.</p>
+                        <ul class="space-y-2 text-brand-gray">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Wholesale account setup and approval</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Inventory management and forecasting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Pricing strategy and margin optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-brand-secondary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Order fulfillment and customer service</span>
+                            </li>
+                        </ul>
                     </div>
-                     <div class="bg-brand-card p-6 rounded-lg text-center transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)] border border-brand-primary">
-                        <h4 class="font-semibold text-white">Customer Support</h4>
-                        <p class="text-sm text-brand-gray">Intelligent chatbots, ticket routing, and automated responses.</p>
+                </div>
+
+                <!-- Marketplace Platforms -->
+                <div class="bg-brand-card p-8 rounded-xl border border-brand-primary shadow-[0_0_15px_rgba(251,70,33,0.3)]">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">We Sell on All Major Marketplaces</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                        <div class="text-center p-4 bg-brand-dark rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.5)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 text-brand-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726-1.53.406-3.045.61-4.516.61-2.265 0-4.463-.375-6.59-1.126-2.118-.75-3.98-1.838-5.582-3.266-.16-.164-.18-.29-.06-.48zm3.06-5.117c-.168 0-.33-.033-.48-.1-.154-.066-.234-.15-.24-.25 0-.078.047-.15.15-.225.096-.072.222-.108.375-.108.266 0 .485.075.654.225.17.15.254.33.254.544 0 .26-.096.48-.286.654-.19.174-.42.26-.686.26h.26zm16.98 0c-.168 0-.33-.033-.48-.1-.154-.066-.234-.15-.24-.25 0-.078.047-.15.15-.225.096-.072.222-.108.375-.108.266 0 .485.075.654.225.17.15.254.33.254.544 0 .26-.096.48-.286.654-.19.174-.42.26-.686.26h.26zm-.96-5.25c0 .756-.138 1.41-.414 1.962-.276.552-.654.984-1.134 1.296-.48.312-1.02.468-1.62.468-.3 0-.594-.045-.882-.135-.288-.09-.54-.21-.756-.36-.216-.15-.39-.33-.522-.54-.132-.21-.198-.435-.198-.675 0-.228.063-.423.186-.585.123-.162.288-.243.495-.243.138 0 .255.036.351.108.096.072.18.174.252.306.09.162.174.3.252.414.078.114.18.21.306.288.126.078.288.117.486.117.336 0 .594-.117.774-.351.18-.234.27-.57.27-1.008v-5.346c0-.144.045-.258.135-.342.09-.084.207-.126.351-.126h.99c.144 0 .261.042.351.126.09.084.135.198.135.342v5.274z"/>
+                            </svg>
+                            <p class="text-white font-semibold">Amazon</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-dark rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.5)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 text-brand-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                            <p class="text-white font-semibold">eBay</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-dark rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.5)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 text-brand-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <p class="text-white font-semibold">Walmart</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-dark rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.5)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 text-brand-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8.5C9 8.22386 9.22386 8 9.5 8H13.5C13.7761 8 14 8.22386 14 8.5C14 8.77614 13.7761 9 13.5 9H9.5C9.22386 9 9 8.77614 9 8.5Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4C6 2.89543 6.89543 2 8 2H16C17.1046 2 18 2.89543 18 4V20C18 21.1046 17.1046 22 16 22H8C6.89543 22 6 21.1046 6 20V4ZM8 4H16V20H8V4Z"/>
+                            </svg>
+                            <p class="text-white font-semibold">TikTok Shop</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-dark rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.5)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 text-brand-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            <p class="text-white font-semibold">More</p>
+                        </div>
                     </div>
-                    <div class="bg-brand-card p-6 rounded-lg text-center transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)] border border-brand-primary">
-                        <h4 class="font-semibold text-white">Market Research</h4>
-                        <p class="text-sm text-brand-gray">Automated data collection, sentiment analysis, and competitor tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Registration Services Section -->
+        <section id="business-services" class="py-20 bg-brand-dark/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Complete <span class="text-brand-primary">Business Services</span></h2>
+                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">Everything you need to establish and maintain your business in the US and UK—all in one place.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">US Business Registration</h3>
+                        <p class="text-brand-gray">LLC formation, EIN registration, and complete setup for your US business entity with expert guidance throughout.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">UK Business Registration</h3>
+                        <p class="text-brand-gray">Company formation, VAT registration, and all necessary documentation to establish your UK business presence.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Annual Compliance</h3>
+                        <p class="text-brand-gray">Stay compliant with annual reports, registered agent services, and all required filings to keep your business in good standing.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Tax Filing Services</h3>
+                        <p class="text-brand-gray">Expert tax preparation and filing for both US and UK entities. Maximize deductions and ensure IRS/HMRC compliance.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Registered Agent Service</h3>
+                        <p class="text-brand-gray">Professional registered agent services ensuring you never miss important legal documents or deadlines.</p>
+                    </div>
+                    <div class="bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
+                        <div class="text-brand-secondary mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Business Banking Setup</h3>
+                        <p class="text-brand-gray">Assistance with opening business bank accounts, merchant accounts, and payment processing solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section id="founder" class="py-20 bg-brand-dark/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Meet Our <span class="text-brand-primary">Founder</span></h2>
+                </div>
+                <div class="max-w-4xl mx-auto bg-brand-card p-8 md:p-12 rounded-2xl border border-brand-primary shadow-[0_0_25px_rgba(251,70,33,0.4)]">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770979446/Waleed_DPPP_iycg42.jpg" alt="Waleed Abdullah - Founder" class="founder-image">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Waleed Abdullah</h3>
+                            <p class="text-brand-secondary text-xl mb-4">Founder & CEO</p>
+                            <p class="text-brand-gray text-lg leading-relaxed">
+                                Waleed Abdullah is a <span class="text-brand-primary font-semibold">Gold Medalist Engineer</span> and passionate 
+                                <span class="text-brand-primary font-semibold">technology enthusiast</span> with a vision to revolutionize how businesses 
+                                leverage AI and e-commerce. With expertise in automation, software development, and digital commerce, Waleed founded 
+                                Skilliest.ai to help businesses achieve unprecedented growth through intelligent automation and strategic partnerships. 
+                                His mission is to make cutting-edge technology accessible to businesses of all sizes, empowering them to compete in 
+                                the digital age.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,36 +492,43 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">Ready to <span class="text-brand-primary">Transform Your Business?</span></h2>
-                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">Let's talk about your automation goals. Reach out directly or click below to get started.</p>
+                    <p class="text-brand-gray mt-2 max-w-2xl mx-auto">Let's discuss how we can help you automate, scale, and succeed. Reach out today!</p>
                 </div>
                 <div class="flex justify-center">
                     <div class="lg:w-2/3 xl:w-1/2 bg-brand-card p-8 rounded-xl border border-brand-primary transition-all duration-300 shadow-[0_0_15px_rgba(251,70,33,0.3)] hover:shadow-[0_0_25px_rgba(251,70,33,0.6)]">
                         <h3 class="text-2xl font-bold text-white mb-6 text-center">Contact Information</h3>
-                        <div class="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:space-x-8 mb-8 text-center">
-                            <div class="flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                                <a href="mailto:contact@skilliest.ai" class="text-brand-gray hover:text-brand-secondary">contact@skilliest.ai</a>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center justify-center md:justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <a href="mailto:contact@skilliest.ai" class="text-brand-gray hover:text-brand-secondary transition-colors">contact@skilliest.ai</a>
                             </div>
-                            <div class="flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                                <a href="tel:+1234567890" class="text-brand-gray hover:text-brand-secondary">+1 (234) 567-890</a>
+                            <div class="flex items-center justify-center md:justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <a href="https://wa.me/923144465003" class="text-brand-gray hover:text-brand-secondary transition-colors">+92 314 446 5003</a>
                             </div>
                         </div>
-                        <h4 class="text-xl font-bold text-white mt-10 mb-4 text-center">Chat With Us</h4>
-                        <div class="flex space-x-4 mb-10">
-                            <!-- Replace '#' with your actual chat links -->
-                            <a href="#" target="_blank" class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-colors">
-                                <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1756001861/2_-_Copy_x8pgwb.png" alt="Messenger Logo" class="h-6 w-6 mr-2">
-                                Messenger
-                            </a>
-                            <a href="https://wa.me/12148948638" target="_blank" class="flex-1 bg-green-500 hover:bg-green-400 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.956-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <h4 class="text-xl font-bold text-white mt-10 mb-4 text-center">Connect With Us</h4>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                            <a href="https://wa.me/923144465003" target="_blank" class="flex-1 bg-green-500 hover:bg-green-400 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.6)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.956-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                </svg>
                                 WhatsApp
                             </a>
+                            <a href="mailto:contact@skilliest.ai" class="flex-1 bg-brand-primary hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,70,33,0.6)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                Email Us
+                            </a>
                         </div>
-                         <div class="mt-8 text-center">
+                        <div class="mt-8 text-center">
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUTuQ8-V_H1-u-o97yyG7idHduMpm6dLuOVKmmFSeHn_Huiw/viewform" target="_blank" class="bg-brand-primary hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-[0_0_20px_rgba(251,70,33,0.7)]">
-                                Contact Us
+                                Schedule a Free Consultation
                             </a>
                         </div>
                     </div>
@@ -317,7 +540,7 @@
     <!-- Footer -->
     <footer class="bg-brand-card/50 border-t border-gray-800/50">
         <div class="container mx-auto px-6 py-6 text-center text-brand-gray">
-            <p>&copy; 2025 Skilliest.ai. All Rights Reserved.</p>
+            <p>&copy; 2026 Skilliest.ai. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -325,13 +548,12 @@
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         if (mobileMenuButton && mobileMenu) {
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Close mobile menu when a link is clicked
             const mobileMenuLinks = mobileMenu.querySelectorAll('a');
             mobileMenuLinks.forEach(link => {
                 link.addEventListener('click', () => {
@@ -340,52 +562,14 @@
             });
         }
 
-        // Animate "How it works" progress line on scroll
-        const progressLine = document.getElementById('progress-line');
-        const howItWorksSection = document.getElementById('how-it-works');
-        
-        function animateLine() {
-            if (!howItWorksSection) return; // Guard clause
-
-            const sectionTop = howItWorksSection.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (sectionTop < windowHeight * 0.75) {
-                // FIX: Make the selector more specific to target only the step divs inside the grid
-                const steps = howItWorksSection.querySelectorAll('.grid > .text-center');
-                
-                steps.forEach((step, index) => {
-                    setTimeout(() => {
-                        const circle = step.querySelector('.relative > div');
-                        if (circle) { // Guard clause for circle
-                            circle.classList.remove('border-gray-800', 'text-white');
-                            circle.classList.add('border-brand-primary', 'text-brand-secondary');
-                        }
-                        
-                        // Update line progress
-                        if (progressLine && index > 0) { // Guard clause for progressLine
-                            progressLine.style.width = `${(index / (steps.length - 1)) * 100}%`;
-                            progressLine.style.transition = 'width 0.5s ease-in-out';
-                        }
-
-                    }, index * 300);
-                });
-                window.removeEventListener('scroll', animateLine); // Animate only once
-            }
-        }
-        
-        if (howItWorksSection) { // Only add listener if section exists
-            window.addEventListener('scroll', animateLine);
-        }
-
         // Typewriter Effect
         document.addEventListener('DOMContentLoaded', function() {
             const typewriterElement = document.getElementById('typewriter-text');
             if (typewriterElement) {
                 const phrases = [
-                    "We automate everything.",
-                    "We are the best.",
-                    "We are the Skilliest."
+                    "AI Automation Experts",
+                    "E-commerce Growth Partners",
+                    "Your Business Success Story"
                 ];
                 let phraseIndex = 0;
                 let charIndex = 0;
@@ -397,32 +581,29 @@
                 function type() {
                     const currentPhrase = phrases[phraseIndex];
                     if (isDeleting) {
-                        // Deleting
                         typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
                         charIndex--;
                         if (charIndex === 0) {
                             isDeleting = false;
                             phraseIndex = (phraseIndex + 1) % phrases.length;
-                            setTimeout(type, 500); // Pause before typing next phrase
+                            setTimeout(type, 500);
                         } else {
                             setTimeout(type, deletingSpeed);
                         }
                     } else {
-                        // Typing
                         typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
                         charIndex++;
                         if (charIndex === currentPhrase.length) {
                             isDeleting = true;
-                            setTimeout(type, delayBetweenPhrases); // Pause at the end of the phrase
+                            setTimeout(type, delayBetweenPhrases);
                         } else {
                             setTimeout(type, typingSpeed);
                         }
                     }
                 }
-                setTimeout(type, 500); // Start the effect
+                setTimeout(type, 500);
             }
         });
-
     </script>
 </body>
 </html>
