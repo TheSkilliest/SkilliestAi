@@ -1,0 +1,303 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+/* Background Effects */
+.background-nebula {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: #000000;
+    overflow: hidden;
+}
+
+.nebula-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.12;
+    animation: move 20s infinite alternate;
+}
+
+.nebula-1 {
+    width: 900px;
+    height: 900px;
+    top: -20%;
+    left: -10%;
+    background: #f24405;
+    animation-duration: 25s;
+}
+
+.nebula-2 {
+    width: 700px;
+    height: 700px;
+    bottom: -20%;
+    right: -10%;
+    background: #f28705;
+    animation-duration: 30s;
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(100px, 50px) scale(1.1); }
+}
+
+/* Gradients and Glows */
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(135deg, #f28705, #f25c05, #f24405);
+    text-shadow: 0 0 30px rgba(242, 92, 5, 0.3);
+    padding-bottom: 2px;
+}
+
+.bg-gradient-brand {
+    background: linear-gradient(135deg, #f28705, #f25c05, #f24405);
+}
+
+.hero-glow {
+    box-shadow: 0 0 200px 80px rgba(242, 92, 5, 0.2);
+}
+
+/* Card Glow Effects */
+.glow-card {
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(242, 92, 5, 0.15);
+    border: 1px solid rgba(242, 92, 5, 0.3);
+}
+
+.glow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(242, 92, 5, 0.6);
+    border-color: rgba(242, 92, 5, 0.8);
+}
+
+/* 3D Tilted Hero Images */
+.hero-collage-container {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.hero-img-main {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 65%;
+    border-radius: 1.5rem;
+    transform: rotateY(-15deg) rotateX(5deg) translateZ(0);
+    box-shadow: -20px 20px 40px rgba(0,0,0,0.8), 0 0 20px rgba(242, 92, 5, 0.3);
+    border: 1px solid #333;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+    object-fit: cover;
+}
+
+.hero-img-sub1 {
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+    width: 50%;
+    border-radius: 1.5rem;
+    background-color: #111111;
+    transform: rotateY(15deg) rotateX(-5deg) translateZ(40px);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.9), 0 0 25px rgba(242, 92, 5, 0.4);
+    border: 2px solid #f25c05;
+    z-index: 3;
+    transition: all 0.5s ease-out;
+    padding: 10px;
+}
+
+.hero-img-sub2 {
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    width: 45%;
+    border-radius: 1.5rem;
+    background-color: #141414;
+    transform: rotateY(-15deg) rotateX(-10deg) translateZ(60px);
+    box-shadow: -15px 15px 30px rgba(0,0,0,0.9), 0 0 20px rgba(242, 135, 5, 0.3);
+    border: 2px solid #f28705;
+    z-index: 4;
+    transition: all 0.5s ease-out;
+    padding: 10px;
+}
+
+.hero-collage-container:hover .hero-img-main {
+    transform: rotateY(0) rotateX(0) translateZ(20px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(242, 92, 5, 0.4);
+    z-index: 10;
+}
+
+.hero-collage-container:hover .hero-img-sub1 {
+    transform: rotateY(0) rotateX(0) translateZ(40px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(242, 92, 5, 0.6);
+    z-index: 10;
+}
+
+.hero-collage-container:hover .hero-img-sub2 {
+    transform: rotateY(0) rotateX(0) translateZ(60px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(242, 135, 5, 0.5);
+    z-index: 10;
+}
+
+/* Typewriter Cursor */
+#cursor {
+    animation: blink 0.7s infinite;
+    color: #f25c05;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Marketplace Logos - Updated Background to be completely light/white for contrast */
+.marketplace-logo-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff; /* Forces a white background for perfect PNG contrast */
+    border-radius: 50%;
+    border: 3px solid #f25c05;
+    box-shadow: 0 0 15px rgba(242, 92, 5, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 14px;
+}
+.marketplace-logo-circle:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 25px rgba(242, 92, 5, 0.8);
+}
+.marketplace-logo-circle img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Floating Chat Buttons */
+.whatsapp-float, .messenger-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+    z-index: 100;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.whatsapp-float {
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+}
+.messenger-float {
+    left: 30px;
+    background-color: #00B2FF;
+    color: #FFF;
+}
+.messenger-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 178, 255, 0.8);
+}
+
+/* Founder Styling */
+.founder-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #f25c05;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(242, 68, 5, 0.5);
+}
+
+/* Footer Social Links Alignment */
+.social-text-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures list items are left aligned internally */
+    gap: 0.75rem;
+}
+.social-text-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #CCCCCC;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: 0.95rem;
+}
+.social-text-links li a:hover {
+    color: #f28705;
+    text-shadow: 0 0 8px rgba(242, 135, 5, 0.6);
+}
+
+/* Mobile Responsiveness for 3D Hero Collage */
+@media (max-width: 768px) {
+    .hero-collage-container {
+        height: 320px; /* Reduce container height so it doesn't leave huge empty gaps */
+        perspective: 800px; /* Soften the perspective for smaller screens */
+    }
+
+    .hero-img-main {
+        width: 75%; /* Make the main image take up more space */
+        right: 12%;
+        top: 5%;
+        /* Tone down the rotation so it doesn't clip off the screen */
+        transform: rotateY(-8deg) rotateX(5deg) translateZ(0); 
+    }
+
+    .hero-img-sub1 {
+        width: 55%;
+        left: 2%;
+        bottom: 5%;
+        transform: rotateY(8deg) rotateX(-5deg) translateZ(20px);
+        padding: 4px; /* Dramatically reduce padding so the image doesn't turn into dots */
+        border-width: 1px;
+    }
+
+    .hero-img-sub2 {
+        width: 50%;
+        right: 0%;
+        bottom: 0%;
+        transform: rotateY(-8deg) rotateX(-5deg) translateZ(30px);
+        padding: 4px; /* Dramatically reduce padding */
+        border-width: 1px;
+    }
+
+    /* Disable the extreme hover pop-out effects on mobile to prevent scrolling glitches */
+    .hero-collage-container:hover .hero-img-main {
+        transform: rotateY(-8deg) rotateX(5deg) translateZ(0);
+        box-shadow: -20px 20px 40px rgba(0,0,0,0.8), 0 0 20px rgba(242, 92, 5, 0.3);
+    }
+    .hero-collage-container:hover .hero-img-sub1 {
+        transform: rotateY(8deg) rotateX(-5deg) translateZ(20px);
+        box-shadow: 20px 20px 40px rgba(0,0,0,0.9), 0 0 25px rgba(242, 92, 5, 0.4);
+    }
+    .hero-collage-container:hover .hero-img-sub2 {
+        transform: rotateY(-8deg) rotateX(-5deg) translateZ(30px);
+        box-shadow: -15px 15px 30px rgba(0,0,0,0.9), 0 0 20px rgba(242, 135, 5, 0.3);
+    }
+}
