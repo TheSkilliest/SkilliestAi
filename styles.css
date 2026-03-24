@@ -24,7 +24,7 @@ body {
     position: absolute;
     border-radius: 50%;
     filter: blur(150px);
-    opacity: 0.025;
+    opacity: 0.0;
     animation: move 20s infinite alternate;
 }
 
